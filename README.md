@@ -9,6 +9,8 @@ The edit to `utils.js` was [posted on Hacker News](https://news.ycombinator.com/
 
 # How do I install this? Per [StackOverflow](https://stackoverflow.com/questions/24577024/install-chrome-extension-not-in-the-store)
 
+Download a .zip of this repo [here](https://github.com/byrnehollander/perceptual-adblocker-edited/archive/master.zip), unzip the folder, and then load it in Chrome.
+
 Extensions can be loaded in [unpacked mode](https://developer.chrome.com/extensions/getstarted#unpacked) by following the following steps:
 
 1. Visit `chrome://extensions` (via omnibox or menu -> Tools -> Extensions).
