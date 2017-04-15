@@ -1,0 +1,34 @@
+{
+   "background": {
+      "scripts": [ "externalCode/grafi.js", "externalCode/tesseract.js", "perceptualLibrary/adchoices_hashes.js", "perceptualLibrary/hash_encoding.js", "perceptualLibrary/perceptual_background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon24.png",
+      "default_popup": "popup.html",
+      "default_title": "Perceptual Ad Blocker"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "externalCode/jquery/jquery-1.12.4.min.js", "perceptualLibrary/image_search.js", "utils.js", "content.js" ],
+      "match_about_blank": true,
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_idle"
+   }, {
+      "js": [ "externalCode/jquery/jquery-1.12.4.min.js", "perceptualLibrary/container_finder.js", "perceptualLibrary/link_clicker.js", "perceptualLibrary/check_text_and_link.js", "locale_info.js", "utils.js", "ad_highlighter.js" ],
+      "matches": [ "https://www.facebook.com/*" ]
+   } ],
+   "content_security_policy": "object-src 'self'; img-src * data:; script-src 'self' 'unsafe-eval' chrome-extension://gealglfelmndodeocfbfedggekgiofhe blob: filesystem: chrome-extension-resource:",
+   "description": "Identify Advertisements Using Perceptual Techniques",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvUjFKl6Eyy+2k8bsuCvQE0I/TkbnuZtQUVALYLp4cV2a3imy47YvG7zDR3KtwhkFvnv9fvpeUyzrT+u4e4YTFcAkmgmUSySXEPw+zzvBwrI3FiHJmSc9uzEeAQF02FovVLge1AlzKOM70VkqEP15r6KwasOrM3dhmCsuXlER5J8odE7FkCah0PW9QhH9r1rkcmnCM0A1W+Afk7MPJvU4t09DBnrNNt0DqAl5vPE0x1YqFNypK9IBi/8+/yvgZf13s7Q1F0STKWQcPGGv5EAfjTmdJkuhz5tqB1pqYtZyqpSwMxalgsKZsvjGjJWGCqGU2+j3t/NDGbSipQmPS1L/rQIDAQAB",
+   "manifest_version": 2,
+   "name": "Perceptual Ad Blocker",
+   "permissions": [ "tabs", "webRequest", "webRequestBlocking", "*://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.0",
+   "web_accessible_resources": [ "actual_icons/*.png", "externalCode/tesseract_index.js", "externalCode/tesseract_worker.js", "externalCode/eng.traineddata.gz" ]
+}
