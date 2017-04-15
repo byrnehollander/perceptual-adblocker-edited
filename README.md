@@ -1,7 +1,11 @@
 # Foreword
-This is a copy of the [Perceptual Ad Blocker proof of concept extension](https://chrome.google.com/webstore/detail/perceptual-ad-blocker/mahgiflleahghaapkboihnbhdplhnchp?hl=en) released by Arvind Narayanan, Dillon Reisman, Jonathan Mayer, and Grant Storey modified to hide ads (after loading them) rather than just having an overlay that something is recognized as an ad.
+This is a patched copy of the [Perceptual Ad Blocker proof of concept extension](https://chrome.google.com/webstore/detail/perceptual-ad-blocker/mahgiflleahghaapkboihnbhdplhnchp?hl=en) released by Arvind Narayanan, Dillon Reisman, Jonathan Mayer, and Grant Storey modified to hide ads (after loading them) rather than just having an overlay that something is recognized as an ad.
 
 The edit to `utils.js` was [posted on Hacker News](https://news.ycombinator.com/item?id=14117084) by [/u/make3](https://news.ycombinator.com/user?id=make3)
+
+[Paper by the creators of this extension](http://randomwalker.info/publications/ad-blocking-framework-techniques.pdf)
+
+[Blog post by the creators of this extension](https://freedom-to-tinker.com/2017/04/14/the-future-of-ad-blocking/)
 
 [Hacker News article](https://news.ycombinator.com/item?id=14116413)
 
